@@ -39,4 +39,4 @@ RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 9081
 
 # RUN spring boot service
-ENTRYPOINT ["java","-jar","server.port=9080","/home/docker/service/libs/abc-1.jar"]
+ENTRYPOINT ["java","-jar","server.port=9081","/home/docker/service/libs/abc-1.jar"]
