@@ -36,7 +36,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 # I want the web application running in the container to be accessible from
 # the outside. We're exposing a REST API to control and monitor the scan worker
-EXPOSE 9080
+EXPOSE 9081
 
 # RUN spring boot service
-ENTRYPOINT ["java","-jar","/home/docker/service/libs/abc-1.jar"]
+ENTRYPOINT ["java","-jar","server.port=9080","/home/docker/service/libs/abc-1.jar"]
