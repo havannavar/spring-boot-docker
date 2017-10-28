@@ -67,5 +67,5 @@ EXPOSE 9081
 Our Springboot main class is in the abc-1.jar file, We must use ENTRYPONT because, spring boot has internal webserver(tomcat), that will run the boot application
 
 ```
-ENTRYPOINT ["java","-jar","/home/docker/service/libs/apbc-1.jar"]
+ENTRYPOINT ["java","-jar","server.port=9081","/home/docker/service/libs/apbc-1.jar"]
 ```
